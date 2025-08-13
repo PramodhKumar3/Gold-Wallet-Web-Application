@@ -398,4 +398,4 @@ To keep pace with best practices and scalability, consider the following improve
 
 Created with 💻 by Pramodh Kumar
 
-For questions, feedback, or contributions, please open an issue or contact the author directly.
+For questions, feedback, or contributions, please open an issue or contact directly.
