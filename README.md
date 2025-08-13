@@ -396,6 +396,6 @@ To keep pace with best practices and scalability, consider the following improve
 
 ## 📬 Contact
 
-Created with 💻 by [Pramodh Kumar](www.linkedin.com/in/tamminaina-pramodh-kumar-6433a4242)
+Created with 💻 by [Pramodh Kumar](https://www.linkedin.com/in/tamminaina-pramodh-kumar-6433a4242)
 
 For questions, feedback, or contributions, please open an issue or contact directly.
