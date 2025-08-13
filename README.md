@@ -14,15 +14,16 @@ This README provides detailed instructions to run the project, set up the databa
 3. [Screenshots](#️-screenshots)
 4. [Project Structure](#-project-structure)
 5. [Application Configuration](#-application-configuration)
-6. [Endpoints Overview](#-endpoints-overview)
-7. [Validations](#-validations)
-8. [Global Exception Handling](#-global-exception-handling)
-9. [Thymeleaf Integration](#-thymeleaf-integration)
-10. [Prerequisites](#-prerequisites)
-11. [Docker & Kubernetes Deployment](#-docker--kubernetes-deployment)
-12. [Run Instructions](#-run-instructions)
-13. [Future Enhancements](#-future-enhancements)
-14. [Contact](#-contact)
+6. [Database Setup]()
+7. [Endpoints Overview](#-endpoints-overview)
+8. [Validations](#-validations)
+9. [Global Exception Handling](#-global-exception-handling)
+10. [Thymeleaf Integration](#-thymeleaf-integration)
+11. [Prerequisites](#-prerequisites)
+12. [Docker & Kubernetes Deployment](#-docker--kubernetes-deployment)
+13. [Run Instructions](#-run-instructions)
+14. [Future Enhancements](#-future-enhancements)
+15. [Contact](#-contact)
 
 ---
 
@@ -124,6 +125,42 @@ spring.jpa.properties.hibernate.format_sql=true
 
 - Use strong passwords and restrict MySQL access for production.
 - `ddl-auto=update` is convenient for dev, but use `validate` or migrations for production.
+
+---
+
+## 🗄️ Database Setup (MySQL)
+
+### 1. Start MySQL
+
+Ensure your MySQL server is running.
+
+### 2. Create the Database
+
+Use the following SQL command to create the database with proper UTF-8 support:
+
+```sql
+CREATE DATABASE digitalgoldwallet;
+
+USE digitalgoldwallet;
+```
+
+### 3. Configure Credentials
+
+Set your MySQL credentials in the application.properties file:
+
+```bash
+spring.datasource.url=jdbc:mysql://localhost:3306/digitalgoldwallet
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+```
+
+### 4. Table Creation
+
+On first run, tables will be auto-created or altered if you use:
+
+```bash
+spring.jpa.hibernate.ddl-auto=update
+```
 
 ---
 
