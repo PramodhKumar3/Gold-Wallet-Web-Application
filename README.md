@@ -14,7 +14,7 @@ This README provides detailed instructions to run the project, set up the databa
 3. [Screenshots](#️-screenshots)
 4. [Project Structure](#-project-structure)
 5. [Application Configuration](#-application-configuration)
-6. [Database Setup]()
+6. [Database Setup](#️-database-setup-mysql)
 7. [Endpoints Overview](#-endpoints-overview)
 8. [Validations](#-validations)
 9. [Global Exception Handling](#-global-exception-handling)
