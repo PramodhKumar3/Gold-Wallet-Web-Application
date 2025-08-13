@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.bind.annotation.ControllerAdvice;
 
 import com.cg.gold.exception.AddressException;
 import com.cg.gold.exception.PaymentException;
@@ -20,7 +20,7 @@ import com.cg.gold.exception.VirtualGoldHoldingException;
 
 import jakarta.validation.ConstraintViolationException;
 
-@RestControllerAdvice
+@ControllerAdvice
 public class GlobalExceptionHandler {
 
 	@ExceptionHandler(AddressException.class)
